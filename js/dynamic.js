@@ -4,6 +4,13 @@ let names = [
     "Will", "Daemon", "Jada", "Parker"
 ];
 
+const addName = () => {
+    let nameCtrl = document.getElementById("newName");
+    let name = nameCtrl.value;
+    names.push(name);
+    loadDiv();
+}
+
 const loadDiv = () => {
     let divCtrl = document.getElementById("ps");
     divCtrl.innerHTML = "";
